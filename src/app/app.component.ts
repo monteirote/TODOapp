@@ -31,7 +31,8 @@ export class AppComponent {
     var id = this.arrayDeTarefas[indice]._id;
     this.http.delete<Tarefa>(`${this.apiURL}/api/delete/${id}`).subscribe(
     resultado => { console.log(resultado); this.READ_tarefas(); });
-    }
+  }
+  
     UPDATE_tarefa(tarefaAserModificada: Tarefa) {
       var indice = this.arrayDeTarefas.indexOf(tarefaAserModificada);
       var id = this.arrayDeTarefas[indice]._id;
