@@ -11,7 +11,7 @@ export class AppComponent {
  arrayDeTarefas: Tarefa[] = [];
  apiURL : string;
  constructor(private http: HttpClient) {
- this.apiURL = 'http://localhost:3000';
+ this.apiURL = 'https://api-tarefas-sigma.vercel.app';
  this.READ_tarefas();
  }
 
